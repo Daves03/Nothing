@@ -1,0 +1,64 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Button Popup</title>
+    <style>
+        /* Base styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Style for the button */
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem; /* Flexible font size */
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect on the button */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive behavior: Larger screens */
+        @media (min-width: 768px) {
+            button {
+                font-size: 2rem;
+                padding: 20px 40px;
+            }
+        }
+
+        /* Responsive behavior: Smaller screens */
+        @media (max-width: 480px) {
+            button {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("Putangina nyo");
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="showMessage()">Click Me</button>
+
+</body>
+</html>
